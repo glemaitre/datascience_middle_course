@@ -1,0 +1,9 @@
+name: dsc
+channels:
+  - conda-forge
+dependencies:
+  - scikit-learn
+  - imbalanced-learn
+  - jupyterlab
+  - pandas
+  - seaborn
