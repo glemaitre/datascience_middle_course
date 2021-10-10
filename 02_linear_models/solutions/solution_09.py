@@ -1,0 +1,6 @@
+plt.plot(xx, se_loss(0, xx), label="SE loss")
+plt.plot(xx, huber_loss(0, xx, epsilon=1), label="Huber loss")
+plt.plot(xx, absolute_loss(0, xx), label="Absolute loss", linestyle="--")
+plt.ylabel("Loss")
+plt.xlabel("xx")
+_ = plt.legend(loc="center left", bbox_to_anchor=(1, 0.5))
