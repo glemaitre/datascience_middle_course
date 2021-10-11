@@ -1,4 +1,4 @@
-name: dsc
+name: teaching
 channels:
   - conda-forge
 dependencies:
