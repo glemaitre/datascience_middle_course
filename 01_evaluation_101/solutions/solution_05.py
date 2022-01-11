@@ -6,7 +6,7 @@ class LinearRegression:
             X = np.hstack(
                 [X, np.ones((X.shape[0], 1))]
             )
-        self.coef_ = coef = np.linalg.inv(X.T @ X) @ X.T @ y
+        self.coef_ = np.linalg.inv(X.T @ X) @ X.T @ y
         self._target_name = y.columns
         return self
     def predict(self, X):
