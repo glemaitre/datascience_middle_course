@@ -13,18 +13,10 @@ default channel used to install the packages is `conda-forge`. You can download
 and install mambaforge from the following
 [link](https://github.com/conda-forge/miniforge#mambaforge).
 
-### Creating the environment from the `environment.yml`
-
-We provide an `environment.yml` file that contains the packages to be
-installed. You can use the following command that will create an `teaching`
-environment where the required package will be installed.
+### Creating the environment via `mamba`
 
 ```bash
-$ mamba create --file environment.yml
-```
-
-Then, you can activate the environment via:
-
-```bash
-conda activate teaching
+$ mamba create --name teaching python=3
+$ conda activate teaching
+$ mamba install scikit-learn imbalanced-learn jupyterlab pandas seaborn
 ```
